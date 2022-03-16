@@ -10,7 +10,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the sequence of bird emojis in 6 tries. Food emojis may occur more than once, but never next to itself.
+        Guess the sequence of food emojis in 6 tries. Food emojis may occur more than once, but never next to itself.
         After each guess, the color of the tiles will change to show how close your guess was to the solution.
       </p>
 
@@ -56,7 +56,10 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       <p className="text-sm text-gray-500 dark:text-gray-300">
         The 🍫 is not in the solution in any spot.
       </p>
-      <p> Jordan Feldstein © 2022 </p>
+      <br>
+      <p className="text-sm text-gray-500 dark:text-gray-300">
+       Jordan Feldstein © 2022
+      </p>
     </BaseModal>
   )
 }
