@@ -56,7 +56,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       <p className="text-sm text-gray-500 dark:text-gray-300">
         The 🍫 is not in the solution in any spot.
       </p>
-      <h3> Jordan Feldstein © 2022 </h3>
+      <p> Jordan Feldstein © 2022 </p>
     </BaseModal>
   )
 }
