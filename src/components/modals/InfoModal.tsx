@@ -56,16 +56,6 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       <p className="text-sm text-gray-500 dark:text-gray-300">
         The 🍫 is not in the solution in any spot.
       </p>
-
-      <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-      Jordan Feldstein © 2022  -{' '}
-          Check Out Jordan's Main Website
-        </a>, Here!{' '}
-        <a
-          href="https://jordanfeldstein.com"
-          className="underline font-bold"
-        >here</a>{' '}
-      </p>
     </BaseModal>
   )
 }
