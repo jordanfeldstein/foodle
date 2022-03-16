@@ -10,7 +10,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the sequence of bird emojis in 6 tries. Bird emojis may occur more than once, but never next to itself.
+        Guess the sequence of bird emojis in 6 tries. Food emojis may occur more than once, but never next to itself.
         After each guess, the color of the tiles will change to show how close your guess was to the solution.
       </p>
 
@@ -18,59 +18,45 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="🦤"
+          value="🧀"
           status="correct"
         />
-        <Cell value="🦚" />
-        <Cell value="🦉" />
-        <Cell value="🦜" />
-        <Cell value="🐓" />
+        <Cell value="🍒" />
+        <Cell value="🍆" />
+        <Cell value="🍭" />
+        <Cell value="🥑" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The 🦤 is in the solution and in the correct spot.
+        The 🧀 is in the solution and in the correct spot.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="🐦" />
-        <Cell value="🦉" />
+        <Cell value="🍔" />
+        <Cell value="🍆" />
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="🦃"
+          value="🍑"
           status="present"
         />
-        <Cell value="🐧" />
-        <Cell value="🐦" />
+        <Cell value="🍿" />
+        <Cell value="🍔" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The 🦃 is in the solution but in the wrong spot.
+        The 🍑 is in the solution but in the wrong spot.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="🦜" />
-        <Cell value="🦚" />
-        <Cell value="🦉" />
-        <Cell isRevealing={true} isCompleted={true} value="🦅" status="absent" />
-        <Cell value="🐧" />
+        <Cell value="🍭" />
+        <Cell value="🍒" />
+        <Cell value="🍆" />
+        <Cell isRevealing={true} isCompleted={true} value="🍫" status="absent" />
+        <Cell value="🍿" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The 🦅 is not in the solution in any spot.
+        The 🍫 is not in the solution in any spot.
       </p>
-
-      <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        This is an open source version of the word guessing game we all know and
-        love -{' '}
-        <a
-          href="https://github.com/jleverenz/birdle"
-          className="underline font-bold"
-        >
-          check out the code here
-        </a>, forked from the original clone{' '}
-        <a
-          href="https://github.com/cwackerfuss/react-wordle"
-          className="underline font-bold"
-        >here</a>{' '}
-      </p>
+      <h3> Jordan Feldstein © 2022 </h3>
     </BaseModal>
   )
 }
