@@ -56,9 +56,9 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       <p className="text-sm text-gray-500 dark:text-gray-300">
         The 🍫 is not in the solution in any spot.
       </p>
-      <br>
+      </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-       Jordan Feldstein © 2022
+        Jordan Feldstein © 2022
       </p>
     </BaseModal>
   )
